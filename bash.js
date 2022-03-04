@@ -1,7 +1,4 @@
-process.stdout.write("prompt > ");
+const pwdExport = require('./pwd')
+console.log(pwdExport)
+pwdExport();
 
-process.stdin.on("data", (data) => {
-  const cmd = data.toString().trim();
-  process.stdout.write("You typed: " + cmd);
-  process.stdout.write("\nprompt > ");
-});
